@@ -1,5 +1,4 @@
 import { Results } from "./Results"
-import data from "./assets/model.json"
 import { useState, useRef } from "react"
 
 function App() {
