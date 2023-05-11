@@ -45,6 +45,7 @@ export const Results: React.FC<ResultsProps> = ({ results, status, error }) => {
     return (<>
         {
             results?.map((result, index) => {
+                if (!result) return <></>
                 return (
                     <div key={index}>
                         <h2 className="text-xs font-bold mt-5 text-neutral-500">{result.intent.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())))}</h2>
